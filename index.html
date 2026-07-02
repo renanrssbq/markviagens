@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Mark Viagens | Sua próxima viagem começa aqui</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mark: {
+                            blue: '#09365e',    /* Azul da Logo */
+                            lightBlue: '#154a7c',
+                            gold: '#f5a41c',    /* Amarelo/Laranja do Avião */
+                            hoverGold: '#d98f14',
+                            bg: '#F8FAFC',
+                            gray: '#475569'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+        
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(9, 54, 94, 0.9) 0%, rgba(9, 54, 94, 0.6) 100%);
+	.hide-scrollbar::-webkit-scrollbar { display: none; }
+	.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800 bg-mark-bg selection:bg-mark-gold selection:text-white overflow-x-hidden">
+
+    <header class="w-full bg-white shadow-md sticky top-0 z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                
+               <a href="#" class="flex-shrink-0">
+    <img src="logo sem fundo.png" alt="Agência Mark Viagens" class="h-18 md:h-24 object-contain">
+</a>
+                
+                <nav class="hidden md:flex space-x-8 font-medium text-mark-blue text-sm uppercase tracking-wide">
+                    <a href="#inicio" class="hover:text-mark-gold transition-colors">Início</a>
+                    <a href="#diferenciais" class="hover:text-mark-gold transition-colors">Por que nós?</a>
+                    <a href="#sobre" class="hover:text-mark-gold transition-colors">O Especialista</a>
+		    <a href="#estrutura" class="hover:text-mark-gold transition-colors">nossa estrutura</a>
+                    <a href="#reservas" class="hover:text-mark-gold transition-colors font-bold text-mark-gold">Fazer Reserva</a>
+                </nav>
+                
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="https://www.instagram.com/agenciamarksviagens/" target="_blank" class="text-mark-blue hover:text-mark-gold text-xl transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5532999816884?text=Olá! Quero planejar minha próxima viagem. Pode me ajudar com um orçamento?" target="_blank" class="bg-mark-blue hover:bg-mark-lightBlue text-white px-6 py-2.5 rounded-full text-xs tracking-wider uppercase font-bold transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Fale Conosco
+                    </a>
+                </div>
+
+                <button class="md:hidden text-mark-blue text-2xl focus:outline-none" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl left-0 right-0 z-50">
+            <div class="px-6 py-6 space-y-4 font-medium text-mark-blue text-sm tracking-widest uppercase text-center flex flex-col">
+                <a href="#inicio" class="mobile-nav-link py-3 border-b border-gray-50">Início</a>
+                <a href="#diferenciais" class="mobile-nav-link py-3 border-b border-gray-50">Vantagens</a>
+                <a href="#sobre" class="mobile-nav-link py-3 border-b border-gray-50">Sobre Nós</a>
+		<a href="#estrutura" class="hover:text-mark-gold transition-colors">nossa estrutura</a>
+                <a href="#reservas" class="mobile-nav-link py-3 border-b border-gray-50 text-mark-gold font-bold">Reservas Online</a>
+                <a href="https://wa.me/5532999816884" target="_blank" class="mt-4 bg-mark-blue text-white py-3 rounded-full shadow-md font-bold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative pt-24 pb-32 lg:pt-40 lg:pb-48 overflow-hidden bg-[url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-fixed">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="w-full lg:w-2/3 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 text-mark-gold tracking-[0.2em] uppercase text-xs font-bold mb-6 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-mark-gold/30">
+                    <i class="fa-solid fa-plane-departure"></i> Agência de Viagens
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl text-white leading-[1.1] mb-6 font-heading font-bold">
+                    Sua próxima <span class="text-mark-gold">viagem</span> começa aqui.
+                </h1>
+                <p class="text-gray-200 text-base md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                    Explorar o mundo com a <strong class="text-white">Mark Viagens</strong> pode ser uma das melhores decisões que você fará! Embarque conosco nessa aventura.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#reservas" class="bg-mark-gold hover:bg-mark-hoverGold text-mark-blue px-8 py-4 rounded-full tracking-widest uppercase text-sm font-bold transition-all text-center shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-globe"></i> Reserve Agora
+                    </a>
+                    <a href="https://wa.me/5532999816884?text=Olá! Quero planejar minha próxima viagem. Pode me ajudar com um orçamento?" target="_blank" class="bg-transparent hover:bg-white/10 text-white border-2 border-white px-8 py-4 rounded-full tracking-widest uppercase text-sm font-bold transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-headset"></i> Falar com Consultor
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,121.32,201.3,114.73,243.68,110.87,284.15,95.53,321.39,56.44Z" fill="#F8FAFC"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="py-20 md:py-32 bg-mark-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-mark-blue tracking-[0.2em] uppercase text-lg font-bold">Por que nos escolher?</span>
+                <h2 class="text-3xl md:text-5xl text-mark-blue mt-4 font-heading font-bold">3 motivos para dizer <span class="text-mark-gold">SIM</span> a essa aventura</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-mark-blue/5 border-b-4 border-mark-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-mark-blue/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hand-holding-dollar text-3xl text-mark-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mark-blue mb-4 font-heading">Investimento Justo</h3>
+                    <p class="text-mark-gray text-sm leading-relaxed">Na Mark Viagens, entendemos a importância de cada centavo. Nossos pacotes são desenhados para que você aproveite ao máximo sem estourar o orçamento. Viagem de qualidade com preço que cabe no bolso!</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-mark-blue/5 border-b-4 border-mark-blue hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-mark-gold/20 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-heart text-3xl text-mark-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mark-blue mb-4 font-heading">Ótima Experiência</h3>
+                    <p class="text-mark-gray text-sm leading-relaxed">Nossa missão é garantir que cada momento da sua viagem seja inesquecível. Desde o planejamento até a execução, estamos comprometidos em proporcionar uma experiência que você vai querer compartilhar.</p>
+                </div>
+
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-mark-blue/5 border-b-4 border-mark-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 bg-mark-blue/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-user-tie text-3xl text-mark-blue"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mark-blue mb-4 font-heading">Experiência Personalizada</h3>
+                    <p class="text-mark-gray text-sm leading-relaxed">Sabemos que cada viajante é único. Oferecemos um atendimento exclusivo e adaptável aos seus interesses e necessidades. Personalizamos sua viagem para que ela seja verdadeiramente sua!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="relative order-2 lg:order-1">
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-mark-gold/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-mark-blue/20 rounded-full blur-2xl"></div>
+                    
+                    <div class="relative z-10 rounded-3xl overflow-hidden border-8 border-white shadow-2xl bg-mark-blue">
+                        <img src="foto_02.jpg" alt="Especialista Mark Viagens" class="w-full h-auto object-cover object-top opacity-95">
+                    </div>
+                    
+                    <div class="absolute bottom-10 -right-8 z-20 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 hidden md:flex items-center gap-4">
+                        <div class="w-12 h-12 bg-mark-gold rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-mark-blue font-heading leading-tight">Especialista</h4>
+                            <p class="text-xs text-mark-gray">Em roteiros únicos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <span class="text-mark-gold tracking-[0.2em] uppercase text-lg font-bold pb-1 border-b-2 border-mark-gold inline-block mb-4">Quem Somos</span>
+                    <h2 class="text-3xl md:text-5xl text-mark-blue mt-4 mb-8 font-heading font-bold">Viaje conosco e deixe sua <span class="text-mark-gold">marca no mundo</span></h2>
+                    
+                    <div class="space-y-6 text-mark-gray leading-relaxed text-lg">
+                        <p>
+                            A <strong>Mark Viagens</strong> nasceu da paixão por conectar pessoas a destinos inesquecíveis. Acreditamos que viajar não é apenas sobre conhecer novos lugares, mas sobre criar memórias que duram a vida inteira.
+                        </p>
+                        <p>
+                            Nosso diferencial é o <strong>atendimento 100% humanizado e personalizado</strong> para cada tipo de cliente. Seja uma viagem em família, uma lua de mel romântica ou uma aventura solo, nós cuidamos de cada detalhe para que sua única preocupação seja fazer as malas.
+                        </p>
+                    </div>
+
+                    <div class="mt-10">
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Roteiros Nacionais e Internacionais
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Suporte Completo durante a viagem
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Parcerias com as melhores operadoras
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Nossa Estrutura / Loja e Online -->
+    <section id="estrutura" class="py-24 bg-mark-bg border-t border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <!-- Coluna de Texto -->
+                <div>
+                    <span class="text-mark-gold tracking-[0.2em] uppercase text-lg font-bold pb-1 border-b-2 border-mark-gold inline-block mb-4">Nossa Estrutura</span>
+                    <h2 class="text-3xl md:text-5xl text-mark-blue mt-2 mb-6 font-heading font-bold">Venha tomar um café ou <span class="text-mark-gold">chame no WhatsApp.</span></h2>
+                    
+                    <p class="text-mark-gray text-lg leading-relaxed mb-8">
+                        Na Mark Viagens, unimos o melhor dos dois mundos: a segurança e o conforto de uma <strong>loja física completa</strong> com a agilidade e praticidade do <strong>atendimento 100% online</strong>.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- Ponto 1: Loja Física -->
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-mark-blue/10 rounded-full flex items-center justify-center flex-shrink-0 text-mark-blue">
+                                <i class="fa-solid fa-store text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-mark-blue font-heading mb-1">Loja Física</h4>
+                                <p class="text-sm text-mark-gray leading-relaxed">
+                                    Faça-nos uma visita! Um espaço planejado para te receber com conforto enquanto desenhamos o roteiro dos seus sonhos pessoalmente.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Ponto 2: Atendimento Online -->
+                        <div class="flex items-start gap-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100 border-l-4 border-l-mark-gold">
+                            <div class="w-12 h-12 bg-mark-gold/20 rounded-full flex items-center justify-center flex-shrink-0 text-mark-gold">
+                                <i class="fa-solid fa-headset text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-mark-blue font-heading mb-1">Atendimento Online</h4>
+                                <p class="text-sm text-mark-gray leading-relaxed">
+                                    Prefere resolver tudo de casa? Nossa equipe presta o mesmo atendimento de excelência de forma remota, em qualquer lugar do Brasil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna do Carrossel de Fotos -->
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white group">
+                    
+                    <!-- Imagens do Carrossel -->
+                    <div id="carousel-track" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar w-full h-[400px] md:h-[550px]">
+                        
+                        <!-- Foto 1 (Substitua o src pela foto da loja 01) -->
+                        <img src="ambiente-1.jpg" alt="Interior da Loja 1" class="snap-center w-full flex-shrink-0 object-cover">
+                        
+                        <!-- Foto 2 (Substitua o src pela foto da loja 02) -->
+                        <img src="ambiente-2.jpg" alt="Interior da Loja 2" class="snap-center w-full flex-shrink-0 object-cover">
+                        
+                        <!-- Foto 3 (Substitua o src pela foto da loja 03) -->
+                        <img src="ambiente-3.jpg" alt="Interior da Loja" class="snap-center w-full flex-shrink-0 object-cover">
+
+			<!-- Foto 4 (Substitua o src pela foto da loja 03) -->
+                        <img src="ambiente-4.jpg" alt="Interior da Loja" class="snap-center w-full flex-shrink-0 object-cover">
+
+			<!-- Foto 5 (Substitua o src pela foto da loja 03) -->
+                        <img src="ambiente-5.jpg" alt="Interior da Loja" class="snap-center w-full flex-shrink-0 object-cover">
+
+			<!-- Foto 6 (Substitua o src pela foto da loja 03) -->
+                        <img src="ambiente-6.jpg" alt="Interior da Loja" class="snap-center w-full flex-shrink-0 object-cover">
+
+
+
+                        
+                    </div>
+
+                    <!-- Botões de Navegação (Esquerda/Direita) -->
+                    <button onclick="scrollCarousel(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-mark-blue w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 text-xl z-10">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="scrollCarousel(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-mark-blue w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all opacity-100 md:opacity-0 md:group-hover:opacity-100 text-xl z-10">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Etiqueta sobre a foto -->
+                    <div class="absolute bottom-6 left-6 z-10 bg-mark-blue/80 backdrop-blur-md text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2">
+                        <i class="fa-solid fa-camera"></i> Conheça nosso espaço
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-mark-blue">
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
+        </div>
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-mark-gold rounded-full text-white text-3xl mb-8 shadow-lg shadow-mark-gold/30">
+                <i class="fa-solid fa-laptop-plane"></i>
+            </div>
+            
+            <h2 class="text-3xl md:text-5xl text-white font-heading font-bold mb-6">Planeje sua próxima viagem com praticidade!</h2>
+            <p class="text-blue-100 text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
+                Acesse nosso sistema digital exclusivo para pesquisar passagens, consultar tarifas de hotéis e encontrar as melhores opções para sua viagem com rapidez, segurança e total autonomia.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://br.onertravel.com/agenciamarkviagens/home" target="_blank" class="bg-mark-gold hover:bg-white text-mark-blue px-10 py-5 rounded-full text-sm tracking-widest uppercase font-bold transition-all shadow-xl hover:-translate-y-1 flex items-center justify-center gap-3 w-full sm:w-auto">
+                    <i class="fa-solid fa-ticket"></i> Acessar Portal de Reservas
+                </a>
+                
+                <span class="text-white/50 font-medium">OU</span>
+
+                <a href="https://wa.me/5532999816884?text=Olá! Quero planejar minha próxima viagem. Pode me ajudar com um orçamento?" target="_blank" class="bg-transparent border-2 border-white/30 hover:border-white text-white px-10 py-5 rounded-full text-sm tracking-widest uppercase font-bold transition-all flex items-center justify-center gap-3 w-full sm:w-auto">
+                    <i class="fa-brands fa-whatsapp"></i> Falar com um Consultor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-16 pb-8 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12 mb-12">
+                
+                <div class="md:col-span-5">
+                    <img src="logo sem fundo.png" alt="Mark Viagens Logo" class="h-20 mb-14">
+                    <p class="text-mark-gray text-sm leading-relaxed mb-6 max-w-sm">
+                        Explorar o mundo com a Mark Viagens pode ser uma das melhores decisões que você fará. Atendimento personalizado para cada tipo de cliente.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/agenciamarksviagens/" target="_blank" class="w-10 h-10 bg-mark-blue/5 rounded-full flex items-center justify-center text-mark-blue hover:bg-mark-blue hover:text-white transition-colors">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-3">
+                    <h4 class="text-mark-blue font-bold mb-6 tracking-widest uppercase text-xs font-heading">Navegação</h4>
+                    <ul class="space-y-4 text-mark-gray text-sm">
+                        <li><a href="#inicio" class="hover:text-mark-gold transition">Início</a></li>
+                        <li><a href="#diferenciais" class="hover:text-mark-gold transition">Vantagens</a></li>
+                        <li><a href="#sobre" class="hover:text-mark-gold transition">Sobre a Agência</a></li>
+                        <li><a href="https://br.onertravel.com/agenciamarkviagens/home" target="_blank" class="hover:text-mark-gold transition font-medium">Plataforma de Reservas</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4">
+                    <h4 class="text-mark-blue font-bold mb-6 tracking-widest uppercase text-xs font-heading">Fale Conosco</h4>
+                    <div class="space-y-4 text-mark-gray text-sm">
+                        <p class="flex items-start gap-3">
+                            <i class="fa-brands fa-whatsapp text-mark-gold text-lg mt-0.5"></i> 
+                            <a href="https://wa.me/5532999816884?text=Olá! Quero planejar minha próxima viagem. Pode me ajudar com um orçamento?" class="hover:text-mark-blue transition font-medium">Atendimento via WhatsApp</a>
+                        </p>
+                        <p class="flex items-start gap-3">
+                            <i class="fa-regular fa-envelope text-mark-gold text-lg mt-0.5"></i> 
+                            <span>contato@markviagens.com.br</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 uppercase tracking-wider font-bold">
+                <p>© 2026 Agência Mark Viagens. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://gr2webstudio.com.br" target="_blank" class="text-mark-blue hover:text-mark-gold transition">GR2 Web Studio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5532999816884?text=Olá! Quero planejar minha próxima viagem. Pode me ajudar com um orçamento?" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50 animate-bounce">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')) {
+                menuIcon.className = "fa-solid fa-bars";
+            } else {
+                menuIcon.className = "fa-solid fa-xmark";
+            }
+        });
+
+        const navLinks = document.querySelectorAll('.mobile-nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuIcon.className = "fa-solid fa-bars";
+            });
+        });
+    </script>
+<!-- Script do Carrossel da Loja -->
+    <script>
+        function scrollCarousel(direction) {
+            const track = document.getElementById('carousel-track');
+            const scrollAmount = track.clientWidth; // Rola a largura de uma foto inteira
+            track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
