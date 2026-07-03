@@ -103,7 +103,7 @@
                     Sua próxima <span class="text-mark-gold">viagem</span> começa aqui.
                 </h1>
                 <p class="text-gray-200 text-base md:text-xl mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
-                    Explorar o mundo com a <strong class="text-white">Mark Viagens</strong> pode ser uma das melhores decisões que você fará! Embarque conosco nessa aventura.
+                    Explorar o mundo com a <strong class="text-white">Mark Viagens</strong> será uma das melhores decisões que você fará! Embarque conosco nessa aventura.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="#reservas" class="bg-mark-gold hover:bg-mark-hoverGold text-mark-blue px-8 py-4 rounded-full tracking-widest uppercase text-sm font-bold transition-all text-center shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
@@ -159,12 +159,14 @@
             </div>
         </div>
     </section>
-
-    <section id="sobre" class="py-24 bg-white overflow-hidden">
+    <section id="sobre" class="pt-10 pb-24 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- BLOCO 1: FOTO E TEXTOS DIVIDIDOS EM 2 COLUNAS -->
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 
-                <div class="relative order-2 lg:order-1">
+                <!-- Coluna da Foto (Agora centralizada com mx-auto) -->
+                <div class="relative order-2 lg:order-1 max-w-lg mx-auto w-full">
                     <div class="absolute -top-6 -left-6 w-32 h-32 bg-mark-gold/20 rounded-full blur-2xl"></div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-mark-blue/20 rounded-full blur-2xl"></div>
                     
@@ -183,6 +185,7 @@
                     </div>
                 </div>
                 
+                <!-- Coluna do Texto e Lista -->
                 <div class="order-1 lg:order-2">
                     <span class="text-mark-gold tracking-[0.2em] uppercase text-lg font-bold pb-1 border-b-2 border-mark-gold inline-block mb-4">Quem Somos</span>
                     <h2 class="text-3xl md:text-5xl text-mark-blue mt-4 mb-8 font-heading font-bold">Viaje conosco e deixe sua <span class="text-mark-gold">marca no mundo</span></h2>
@@ -197,21 +200,48 @@
                     </div>
 
                     <div class="mt-10">
-                        <ul class="space-y-4">
+                        <!-- Lista dividida em 2 colunas -->
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <li class="flex items-center gap-3 text-mark-blue font-medium">
                                 <i class="fa-solid fa-check-circle text-mark-gold"></i> Roteiros Nacionais e Internacionais
                             </li>
                             <li class="flex items-center gap-3 text-mark-blue font-medium">
-                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Suporte Completo durante a viagem
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Passagens Aéreas
                             </li>
                             <li class="flex items-center gap-3 text-mark-blue font-medium">
-                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Parcerias com as melhores operadoras
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Hospedagens
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Translados
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Cruzeiros
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Consultorias em Milhas
+                            </li>
+                            <li class="flex items-center gap-3 text-mark-blue font-medium">
+                                <i class="fa-solid fa-check-circle text-mark-gold"></i> Planejamento Personalizado
                             </li>
                         </ul>
                     </div>
                 </div>
 
+            </div> <!-- Fim do Grid de 2 colunas -->
+
+            <!-- BLOCO 2: FRASE DE IMPACTO CENTRALIZADA NO FINAL -->
+            <div class="mt-20 max-w-4xl mx-auto text-center">
+                <div class="bg-gray-50 border-t-4 border-mark-gold p-8 rounded-xl shadow-sm relative mt-8">
+                    <!-- Ícone de aspas sobreposto -->
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-white p-2 rounded-full">
+                        <i class="fa-solid fa-quote-left text-2xl text-mark-gold"></i>
+                    </div>
+                    <p class="text-xl md:text-3xl text-mark-blue font-heading italic leading-snug mt-2">
+                        "Seu próximo destino começa com uma <span class="text-mark-gold font-bold">boa escolha.</span>"
+                    </p>
+                </div>
             </div>
+
         </div>
     </section>
 
